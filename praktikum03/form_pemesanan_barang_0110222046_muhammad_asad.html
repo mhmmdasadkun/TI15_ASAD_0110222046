@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Praktikum 3.2 - Form Pemesanan Barang</title>
+    <style>
+        .container {
+            padding: 25px 35px;
+        }
+
+        .form-group {
+            display: block;
+            margin-bottom: 15px;
+        }
+
+        .m-vertical {
+            margin: 10px 0px 10px 0px;
+        }
+
+        .mb-10 {
+            margin-bottom: 10px;
+        }
+
+        .m-0 {
+            margin: 0;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+
+        .self-center {
+            align-self: center;
+        }
+
+        .center {
+            text-align: center;
+        }
+
+        .col-sm {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-sm-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .col-sm-9 {
+            flex: 0 0 75%;
+            max-width: 75%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .form-textarea {
+            display: block;
+            width: 80%;
+            padding: 3px 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        .w-5 {
+            width: 5% !important;
+        }
+
+        .form-control {
+            display: block;
+            width: 80%;
+            height: 35px;
+            padding: 3px 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+
+        .btn-submit {
+            background-color: #198754;
+            border: none;
+            width: 85%;
+            border-radius: 0.25rem;
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-top: 22px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form method="post" action="#" autocomplete="off" class="mb-10">
+            <div class="row">
+                <div class="col-sm center">
+                    <img src="upload.jpg" alt="Upload" width="200" height="200">
+                    <input type="file" name="picture" id="picture" required>
+                </div>
+                <div class="col-sm-8">
+                    <div class="form-group row">
+                        <label for="title" class="col-sm self-center">Title Here:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="title" id="title" value="Macbook Air $800">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="desc" class="col-sm self-center">Description:</label>
+                        <div class="col-sm-9">
+                            <textarea name="desc" class="form-textarea" id="desc"
+                                rows="5">Year: 2009 Model: Condition: Mint</textarea>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="acc_number" class="col-sm self-center">Account Number:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="acc_number" id="acc_number"
+                                value="123-456-789-0">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="bank" class="col-sm self-center">Bank:</label>
+                        <div class="col-sm-9">
+                            <select name="bank" id="bank" class="form-control">
+                                <option value="HSBC" selected>HSBC</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="acc_holder" class="col-sm self-center">Account Holder:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="acc_holder" id="acc_holder"
+                                placeholder="Name Here">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transaction" class="col-sm self-center">Transaction:</label>
+                        <div class="col-sm-9">
+                            <input type="number" class="form-control w-5" name="transaction" id="transaction" value="1">
+                            <small>* If the transaction is for 3 person, choose 3 from the drop-down list</small>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="transaction" class="col-sm self-center"></label>
+                        <div class="col-sm-9">
+                            <div class="form-group">
+                                <input type="checkbox" name="send_method[]" id="phone_method" checked>
+                                <label for="phone_method">Send to Mobile Phone</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="send_method[]" id="email_method" checked>
+                                <label for="email_method">Send to Email</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="mobile_phone" class="col-sm self-center">Send to Mobil Phone:</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="mobile_phone" id="mobile_phone"
+                                value="1234567890, 1234567891">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm self-center">Send to Email</label>
+                        <div class="col-sm-9">
+                            <input type="text" class="form-control" name="email" id="email"
+                                value="mfmm2g12@sotan.ac.uk, fys_06@yahoo.com">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="email" class="col-sm self-center"></label>
+                        <div class="col-sm-9">
+                            <button class="btn-submit">Create Nabr Link</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
