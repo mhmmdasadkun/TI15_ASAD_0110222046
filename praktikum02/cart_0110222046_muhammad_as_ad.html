@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart - 0110222046 - Muhammad As'ad Dwi Kuncoro</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+    
+        header {
+            width: 100%;
+            height: 16vh;
+        }
+    
+        .brand {
+            line-height: 60px;
+            float: left;
+            margin: 10px 40px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+            letter-spacing: 2px;
+        }
+    
+        nav {
+            width: 100%;
+            line-height: 60px;
+            background-color: #333;
+        }
+    
+        nav ul {
+            line-height: 60px;
+            list-style: none;
+            overflow: hidden;
+            color: #fff;
+            padding: 0;
+            text-align: right;
+            margin: 0;
+            padding-right: 30px;
+            transition: 1s;
+        }
+    
+        nav ul li {
+            display: inline-block;
+            padding: 10px 40px;
+        }
+    
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+    
+        .content {
+            width: 100%;
+        }
+    
+        .container {
+            padding: 25px 35px;
+        }
+    
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            margin-right: -15px;
+            margin-left: -15px;
+        }
+    
+        .col-sm {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    
+        .col-sm-8 {
+            flex: 0 0 66.666667%;
+            max-width: 66.666667%;
+            position: relative;
+            width: 100%;
+            min-height: 1px;
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+    
+        table,
+        tr,
+        td {
+            border-collapse: collapse;
+        }
+    
+        .table {
+            width: 100%;
+            color: #333;
+        }
+    
+        .table thead th {
+            vertical-align: center;
+            text-align: left;
+            border-top: 1px solid #dee2e6;
+        }
+    
+        .table td,
+        .table th {
+            padding: 0.8rem;
+            vertical-align: center;
+            border-bottom: 1px solid #dee2e6;
+        }
+    
+        .table-summary {
+            width: 100%;
+            color: #333;
+        }
+    
+        .table-summary tr th {
+            text-align: left;
+            border-top: 1px solid #dee2e6;
+        }
+    
+        .table-summary tr td {
+            text-align: right;
+            border-top: 1px solid #dee2e6;
+        }
+    
+        .table-summary td,
+        .table-summary th {
+            padding: 0.8rem;
+            vertical-align: center;
+        }
+    
+        .title-items {
+            margin-top: 0;
+        }
+    
+        .container-items {
+            display: flex;
+        }
+    
+        .img-items {
+            width: 200px;
+            object-fit: contain;
+            align-self: flex-start;
+            border-radius: 1rem;
+            margin-right: 30px;
+        }
+    
+        .text-items {
+            flex: 1;
+            font-size: 16px;
+            align-self: center;
+            justify-content: center;
+        }
+    
+        .form-control {
+            display: block;
+            width: 80%;
+            height: 35px;
+            padding: 3px 15px;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #495057;
+            background-color: #fff;
+            border: 1px solid #ced4da;
+            border-radius: 0.25rem;
+        }
+    
+        .content-cart-summary {
+            background-color: #f1f1f1;
+            border-radius: 0.5rem;
+        }
+    
+        .title-summary {
+            margin-top: 0;
+        }
+    
+        .btn-checkout {
+            margin-top: 20px;
+            background-color: #209ff1;
+            border: none;
+            width: 100%;
+            border-radius: 0.25rem;
+            font-size: 16px;
+            text-transform: uppercase;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            cursor: pointer;
+        }
+    
+        footer {
+            position: fixed;
+            bottom: 0;
+            padding: 10px 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="brand">Muhammad As'ad</div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="#">Category 1</a></li>
+                        <li><a href="#">Category 2</a></li>
+                        <li><a href="#">Category 3</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <div class="content-cart-items">
+                            <h2 class="title-items">Your Cart</h2>
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Item</th>
+                                        <th>Price</th>
+                                        <th>Quantity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td width="60%">
+                                            <div class="container-items">
+                                                <img src="assets/img/item.jpg" alt="Baju PDIP" class="img-items">
+                                                <span class="text-items">
+                                                    <b>T-Shirt</b><br>
+                                                    Size: Small
+                                                </span>
+                                            </div>
+                                        </td>
+                                        <td width="20%"><b>$20.00</b></td>
+                                        <td width="20%">
+                                            <input type="number" value="99" min="1" max="99" class="form-control">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2"></td>
+                                        <td>Subtotal : <b>$20.00</b></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="content-cart-summary">
+                            <div class="container">
+                                <h3 class="title-summary">Summary (1 Item)</h3>
+                                <table class="table-summary">
+                                    <tr>
+                                        <th>Subtotal</th>
+                                        <td><b>$20.00</b></td>
+                                    </tr>
+                                    <tr>
+                                        <th>Shipping</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Est. Taxes</th>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Total</th>
+                                        <td><b>$20.00</b></td>
+                                    </tr>
+                                </table>
+                                <button class="btn-checkout" type="submit">Checkout</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>Copyright &copy;2022 Created by Muhammad As'ad</p>
+        </footer>
+    </div>
+</body>
+
+</html>
