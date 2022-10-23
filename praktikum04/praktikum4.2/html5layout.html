@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Praktikum 4.2 - Muhammad As'ad Dwi Kuncoro</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: yellow;
+            padding: 20px;
+            border: 2px solid #000;
+            margin-bottom: 10px;
+        }
+
+        .header>.logo {
+            width: 50px;
+            vertical-align: middle;
+            border-radius: 100%;
+        }
+
+        .header>h3 {
+            display: inline-block;
+        }
+
+        nav {
+            /* width: 100%; */
+            line-height: 60px;
+            background-color: green;
+            border: 2px solid #000;
+        }
+
+        nav ul {
+            line-height: 60px;
+            list-style: none;
+            overflow: hidden;
+            color: #fff;
+            padding: 0;
+            text-align: left;
+            margin: 0;
+            padding-right: 30px;
+            transition: 1s;
+        }
+
+        nav ul li {
+            display: inline-block;
+            padding: 10px 40px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+        }
+
+        .articles {
+            padding: 5px;
+            width: 50%;
+            float: left;
+            background-color: orangered;
+            border: 2px solid #000;
+        }
+
+        .articles,
+        .section {
+            margin: 10px;
+        }
+
+        .section {
+            padding: 10px;
+            background-color: orange;
+            border: 2px solid #000;
+        }
+
+        .section>p {
+            font-size: 90%;
+            margin: 4px;
+        }
+
+        aside {
+            margin: 10px;
+            background-color: cyan;
+            width: 40%;
+            padding: 5px;
+            float: left;
+            border: 2px solid #000;
+        }
+        footer {
+            width: 100%;
+            text-align: center;
+            padding: 5px;
+            background-color: yellow;
+            position: fixed;
+            bottom: 0;
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <img src="check.png" alt="Logo" class="logo">
+        <h3>Pemrograman Web</h3>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Nav 1</a></li>
+            <li><a href="#">Nav 2</a></li>
+            <li><a href="#">Nav 3</a></li>
+        </ul>
+    </nav>
+    <main style="display: flex;">
+        <article class="articles">
+            <h1>Article</h1>
+            <section class="section">
+                <h2>Section 1</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere perspiciatis esse blanditiis tenetur, odio quo velit quisquam inventore ipsa?</p>
+            </section>
+            <section class="section">
+                <h2>Section 2</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere perspiciatis esse blanditiis tenetur, odio quo velit quisquam inventore ipsa?</p>
+            </section>
+            <section class="section">
+                <h2>Section 3</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus facere perspiciatis esse blanditiis tenetur, odio quo velit quisquam inventore ipsa?</p>
+            </section>
+        </article>
+        <aside>
+            <h1>Aside</h1>
+            <img src="item.jpg" width="200px" alt="Foto">
+            <img src="item.jpg" width="200px" alt="Foto">
+            <img src="item.jpg" width="200px" alt="Foto">
+            <img src="item.jpg" width="200px" alt="Foto">
+        </aside>
+    </main>
+    <footer>
+        <h2>Footer</h2>
+    </footer>
+</body>
+
+</html>
