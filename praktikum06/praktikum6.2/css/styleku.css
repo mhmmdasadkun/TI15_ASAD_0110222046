@@ -1,0 +1,72 @@
+body {
+    background-color: bisque;
+    font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+p {
+    text-align: justify;
+    width: fit-content;
+}
+
+#header {
+    background-color: burlywood;
+    padding: 10px 10px;
+    text-align: center;
+}
+
+#header h1 {
+    color: blue;
+}
+
+#header blockquote {
+    background-color: yellow;
+}
+
+.menu {
+    text-align: center;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.gambar {
+    text-align: center;
+}
+
+.gambar img {
+    width: 20%;
+}
+
+.isi {
+    padding: 0 10px;
+}
+
+.isi p.first::first-letter {
+    font-size: 300%;
+    color: blue;
+}
+
+#profil {
+    padding: 0 10px;
+}
+
+#beternak {
+    padding: 0 10px;
+}
+
+.koleksi {
+    text-align: center;
+}
+.koleksi img {
+    width: 20%;
+}
+
+.promo{
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}
