@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+#main1 {
+    display: flex;
+    flex: 1;
+    /* Menempati sisa ruang pada flex container body */
+}
+
+#main1>nav {
+    display: flex;
+    flex: 1;
+    /* Mengubah main axis menjadi dari atas ke bawah */
+    background-color: pink;
+}
+
+#main {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    flex: 5;
+    /* Menempati sisa ruang pada flex container body */
+}
+
+#main>header {
+    flex: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+#main article {
+    flex: 2;
+    height: 70vh;
+}
+
+#main aside {
+    flex: 1;
+    height: 70vh;
+    background-color: cyan;
+}
+
+#main>footer {
+    flex: 1;
+}
+
+
+header,
+footer {
+    background: khaki;
+    height: 20vh;
+}
+
+header,
+footer,
+article,
+nav,
+aside {
+    padding: 1em;
+}
